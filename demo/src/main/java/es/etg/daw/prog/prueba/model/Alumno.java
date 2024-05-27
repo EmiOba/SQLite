@@ -1,14 +1,22 @@
 package es.etg.daw.prog.prueba.model;
 
 public class Alumno {
+   private String dni;
    private String nombre;
    private String apellidos;
    private int edad;
 
-   public Alumno(String nombre, String apellidos, int edad) {
+   public Alumno(String dni, String nombre, String apellidos, int edad) {
+      this.dni = dni;
       this.nombre = nombre;
       this.apellidos = apellidos;
       this.edad = edad;
+   }
+   public String getDni() {
+      return dni;
+   }
+   public void setDni(String dni) {
+      this.dni = dni;
    }
    public String getNombre() {
       return nombre;
@@ -28,4 +36,5 @@ public class Alumno {
    public void setEdad(int edad) {
       this.edad = edad;
    }
+
 }
